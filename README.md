@@ -33,5 +33,5 @@ Usage
 * create a new B3 container using config file `/home/yourname/b3-share/b3.xml` 
 
 ```bash
-docker run -d yourname/b3 --config /home/yourname/b3-share/b3.xml
+docker run -v /home/yourname/b3-share:/root/b3 -d yourname/b3 --config root/b3/b3.xml
 ```
