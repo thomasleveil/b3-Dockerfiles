@@ -18,20 +18,30 @@ requirements
 * a host running [Docker](http://docker.io)
 * one of the B3 Dockerfiles
 
-Install
--------
+Build the images
+----------------
 
 ```bash
-docker build -t="yourname/b3" - < Dockerfile-b3
+docker build -t b3 https://raw.githubusercontent.com/thomasleveil/b3-Dockerfiles/master/Dockerfile-b3
 ```
 
-Usage
------
+```bash
+docker build -t b3-1.10 https://raw.githubusercontent.com/thomasleveil/b3-Dockerfiles/master/Dockerfile-b3-1.10
+```
+
+
+Run the containers
+------------------
 
 * create a directory with your B3 config on the docker host machine in `/home/yourname/b3-share/`
 * copy in there your `b3.xml` file and other B3 plugin config files
 * create a new B3 container using config file `/home/yourname/b3-share/b3.xml` 
 
 ```bash
-docker run -v /home/yourname/b3-share:/root/b3 -d yourname/b3 --config root/b3/b3.xml
+docker run -d -v /home/yourname/b3-share:/root/b3 b3 --config root/b3/b3.xml
+```
+
+
+```bash
+docker run -d -v /home/yourname/b3-share:/root/b3 b3-1.10 --config root/b3/b3.xml
 ```
