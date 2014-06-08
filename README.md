@@ -22,11 +22,11 @@ Build the images
 ----------------
 
 ```bash
-docker build -t b3 https://raw.githubusercontent.com/thomasleveil/b3-Dockerfiles/master/Dockerfile-b3
+docker build -t b3 https://raw.githubusercontent.com/thomasleveil/b3-Dockerfiles/master/b3-1.9/Dockerfile
 ```
 
 ```bash
-docker build -t b3-1.10 https://raw.githubusercontent.com/thomasleveil/b3-Dockerfiles/master/Dockerfile-b3-1.10
+docker build -t b3-1.10 https://raw.githubusercontent.com/thomasleveil/b3-Dockerfiles/master/b3-1.10/Dockerfile
 ```
 
 
