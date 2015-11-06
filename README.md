@@ -6,8 +6,8 @@ Docker files to run different flavours of B3 in [Docker containers](http://docke
 
 | Dockerfile            |  description                               |
 |-----------------------|--------------------------------------------|
-| Dockerfile-b3         | B3 latest stable version                   |
-| Dockerfile-b3-1.10    | B3 latest dev version from the 1.10 branch |
+| b3-1.9/Dockerfile     | B3 latest stable version                   |
+| b3-1.10/Dockerfile    | B3 latest dev version from the 1.10 branch |
 
 
 
