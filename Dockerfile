@@ -1,6 +1,6 @@
 FROM ubuntu:trusty
 
-RUN apt-get update 
+RUN apt-get update \
   && apt-get -y install python-pip python-dev build-essential libsqlite3-dev
 
 RUN pip install python-dateutil --upgrade
