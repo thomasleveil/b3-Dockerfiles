@@ -1,37 +1,25 @@
 Docker files for BigBrotherBot (B3)
 ===================================
 
-Docker files to run different flavours of B3 in [Docker containers](http://docker.io)
-
-
-| Dockerfile            |  description                               |
-|-----------------------|--------------------------------------------|
-| b3-1.9/Dockerfile     | B3 latest stable version                   |
-| b3-1.10/Dockerfile    | B3 latest dev version from the 1.10 branch |
-
-
+Dockerfile to run B3 in [Docker containers](http://docker.io)
 
 
 requirements
 ------------
 
 * a host running [Docker](http://docker.io)
-* one of the B3 Dockerfiles
+* 
 
-Build the images
-----------------
-
-```bash
-docker build -t b3 https://raw.githubusercontent.com/thomasleveil/b3-Dockerfiles/master/b3-1.9/Dockerfile
-```
+Build the image
+---------------
 
 ```bash
-docker build -t b3-1.10 https://raw.githubusercontent.com/thomasleveil/b3-Dockerfiles/master/b3-1.10/Dockerfile
+docker build -t b3 https://raw.githubusercontent.com/thomasleveil/b3-Dockerfiles/master/Dockerfile
 ```
 
 
-Run the containers
-------------------
+Run the container
+-----------------
 
 * create a directory with your B3 config on the docker host machine in `/home/yourname/b3-share/`
 * copy in there your `b3.xml` file and other B3 plugin config files
@@ -41,7 +29,3 @@ Run the containers
 docker run -d -v /home/yourname/b3-share:/root/b3 b3 --config root/b3/b3.xml
 ```
 
-
-```bash
-docker run -d -v /home/yourname/b3-share:/root/b3 b3-1.10 --config root/b3/b3.xml
-```
