@@ -9,4 +9,4 @@ RUN git clone https://github.com/ptitbigorneau/BigBrotherBot-For-UrT43.git /root
 
 
 ENTRYPOINT ["python","/root/B3bin/b3_run.py", "-r", "--config", "/root/b3/b3.xml"]
-CMD ["python","/root/B3bin/b3_run.py,"--help"]
+CMD ["--help"]
